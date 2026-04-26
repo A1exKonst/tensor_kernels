@@ -14,3 +14,7 @@ add_subdirectory ("tensor_kernels")
 if(BUILD_BENCHMARKS)
     add_subdirectory("tensor_kernels/benchmark")
 endif()
+
+if(BUILD_TESTING)
+    add_subdirectory("tensor_kernels/tests")
+endif()
